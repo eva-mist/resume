@@ -5,7 +5,7 @@
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
-    font-family: 'Rajdhani', sans-serif;
+    font-family: 'STIX Two Text', serif;
 }
 
 ul {
@@ -75,7 +75,7 @@ a {
 }
 
 header button {
-    background-color: #004d2d;
+    background-color: #5a655d;
     border: none;
     margin-top: 10px;
     padding: 10px;
@@ -97,7 +97,7 @@ header button {
         display: flex;
         justify-content: space-around;
         align-items: center;
-        background-color: #004d2d;
+        background-color: #1c322d;
         position: fixed;
         left: 0;
         top: 0;
@@ -137,13 +137,13 @@ header button {
 /*About*/
 
 .section {
-    width: 50%;
-    margin-left: 25%;
-    margin-right: 25%;
-    margin-top: 25px;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 65px;
     padding: 15px;
     border: solid;
-    border-color: #111;
+    border-color: #1c322d;
     border-width: 1px;
 }
 
@@ -154,9 +154,10 @@ header button {
 
 .scontainer {
     width: 100%;
-    background-color: #fff;
+    background-color: #5a655d;
     border: solid;
-    border-width: 2px;
+    border-width: 1px;
+    margin-bottom: 10px;
 }
 
 .skill {
@@ -167,31 +168,87 @@ header button {
 }
 
 .html {
-    width: 90%;
-    background-color: #004d2d;
+    width: 95%;
+    background-color: #1c322d;
 }
 
 .css {
     width: 80%;
-    background-color: #004d2d;
+    background-color: #1c322d;
 }
 
 .js {
-    width: 60%;
-    background-color: #004d2d;
+    width: 70%;
+    background-color: #1c322d;
 }
 
 .ill {
     width: 20%;
-    background-color: #004d2d;
+    background-color: #1c322d;
 }
 
 .matlab {
     width: 80%;
-    background-color: #004d2d;
+    background-color: #1c322d;
 }
 
 .wp {
     width: 40%;
-    background-color: #004d2d;
+    background-color: #1c322d;
 }
+
+@media screen and (min-width: 770px) {
+    .section {
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 15%;
+        margin-top: 65px;
+        padding: 15px;
+        border: solid;
+        border-color: #1c322d;
+        border-width: 1px;
+    }
+}
+
+
+/*Portfolio*/
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+    position: relative;
+    width: 100%;
+}
+
+.column img {
+    width: 100%;
+    margin-bottom: 15px;
+    border: solid;
+    border-width: 1px;
+    border-color: #1c322d;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    /* Black see-through */
+    color: #11f;
+    width: 100%;
+    transition: .5s ease;
+    opacity: 0;
+    color: #fff;
+    font-size: 22px;
+    padding: 15px;
+    text-align: center;
+}
+
+.column:hover .overlay {
+    opacity: 1;
+}
+
+@media screen and (min-width: 770px) {}
