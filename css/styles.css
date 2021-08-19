@@ -1,0 +1,197 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/*header*/
+
+.hamburger {
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    left: 85%;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.hero-image {
+    background-image: url("/assets/bg6.jpg");
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 30%;
+    left: 18%;
+    color: #fff;
+}
+
+.personal {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+}
+
+header button {
+    background-color: #004d2d;
+    border: none;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+@media screen and (min-width: 460px) {
+    .hero-text {
+        top: 40%;
+        left: 40%;
+    }
+}
+
+@media screen and (min-width: 770px) {
+    .hamburger {
+        display: none;
+    }
+    nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #004d2d;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 60px;
+        z-index: 1;
+    }
+    nav ul {
+        display: flex;
+    }
+    nav ul li a {
+        padding: 50px;
+        font-size: 20px;
+        color: #fff;
+    }
+    .hero-text {
+        top: 35%;
+        left: 45%;
+    }
+    .hero-text :is(h1,
+    h2,
+    button) {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    .personal {
+        width: 90px;
+        height: 90px;
+        margin-bottom: 15px;
+    }
+    header button {
+        padding: 15px;
+    }
+}
+
+
+/*About*/
+
+.section {
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 25px;
+    padding: 15px;
+    border: solid;
+    border-color: #111;
+    border-width: 1px;
+}
+
+.section h1 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.scontainer {
+    width: 100%;
+    background-color: #fff;
+    border: solid;
+    border-width: 2px;
+}
+
+.skill {
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #fff;
+}
+
+.html {
+    width: 90%;
+    background-color: #004d2d;
+}
+
+.css {
+    width: 80%;
+    background-color: #004d2d;
+}
+
+.js {
+    width: 60%;
+    background-color: #004d2d;
+}
+
+.ill {
+    width: 20%;
+    background-color: #004d2d;
+}
+
+.matlab {
+    width: 80%;
+    background-color: #004d2d;
+}
+
+.wp {
+    width: 40%;
+    background-color: #004d2d;
+}
