@@ -206,3 +206,7 @@ hr {
         border-color: #1c322d;
     }
 }
+
+#experience img {
+    width: 5%;
+}
