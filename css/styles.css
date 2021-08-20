@@ -8,46 +8,9 @@
     font-family: 'STIX Two Text', serif;
 }
 
-ul {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-}
-
-
-/*header*/
-
-.hamburger {
-    display: inline-block;
-    cursor: pointer;
-    position: absolute;
-    left: 85%;
-}
-
-.bar1,
-.bar2,
-.bar3 {
-    width: 35px;
-    height: 5px;
-    background-color: #fff;
-    margin: 6px 0;
-    transition: 0.4s;
-}
-
-.change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-    transform: rotate(-45deg) translate(-9px, 6px);
-}
-
-.change .bar2 {
-    opacity: 0;
-}
-
-.change .bar3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px);
-    transform: rotate(45deg) translate(-8px, -8px);
+nav {
+    background-color: #1c322d;
+    font-size: 20px;
 }
 
 .hero-image {
@@ -87,31 +50,18 @@ header button {
         top: 40%;
         left: 40%;
     }
+    nav a.navbar-brand {
+        font-size: 30px;
+        margin-right: 20rem;
+    }
 }
 
 @media screen and (min-width: 770px) {
-    .hamburger {
-        display: none;
+    nav a.navbar-brand {
+        margin-right: 51rem;
     }
-    nav {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        background-color: #1c322d;
-        position: fixed;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 60px;
-        z-index: 1;
-    }
-    nav ul {
-        display: flex;
-    }
-    nav ul li a {
-        padding: 50px;
-        font-size: 20px;
-        color: #fff;
+    nav div ul li.nav-item {
+        margin-right: 15px;
     }
     .hero-text {
         top: 35%;
@@ -141,15 +91,36 @@ header button {
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 65px;
+    margin-bottom: 30px;
     padding: 15px;
     border: solid;
     border-color: #1c322d;
     border-width: 1px;
+    font-size: 20px;
+    box-shadow: 3px 3px #5a655d;
 }
 
 .section h1 {
     text-align: center;
     margin-bottom: 15px;
+}
+
+.section h3,
+.section p {
+    margin-bottom: 13px;
+}
+
+.section li {
+    margin-left: 25px;
+}
+
+.red {
+    color: #5a655d;
+}
+
+hr {
+    height: 3px;
+    background-color: #5a655d;
 }
 
 .scontainer {
@@ -213,42 +184,25 @@ header button {
 
 /*Portfolio*/
 
-.row {
-    display: flex;
-    flex-wrap: wrap;
-}
-
 .column {
-    position: relative;
-    width: 100%;
+    padding: 15px;
 }
 
 .column img {
+    flex: 50%;
     width: 100%;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     border: solid;
     border-width: 1px;
     border-color: #1c322d;
 }
 
-.overlay {
-    position: absolute;
-    bottom: 0;
-    background: rgb(0, 0, 0);
-    background: rgba(0, 0, 0, 0.5);
-    /* Black see-through */
-    color: #11f;
-    width: 100%;
-    transition: .5s ease;
-    opacity: 0;
-    color: #fff;
-    font-size: 22px;
-    padding: 15px;
-    text-align: center;
+@media screen and (min-width: 770px) {
+    .column img {
+        width: 100%;
+        margin-bottom: 10px;
+        border: solid;
+        border-width: 1px;
+        border-color: #1c322d;
+    }
 }
-
-.column:hover .overlay {
-    opacity: 1;
-}
-
-@media screen and (min-width: 770px) {}

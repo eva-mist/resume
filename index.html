@@ -8,27 +8,38 @@
     <title>Resume</title>
     <link rel="stylesheet" href="/css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap" rel="stylesheet">
-    <script src="/JS/script.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 </head>
 
 <body>
     <header>
-        <nav>
-            <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
-                <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-md navbar-dark">
+            <a class="navbar-brand" href="#">Opoto</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experience</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
         <div class="hero-image">
-            <div class="hamburger" onclick="hamBurger(this)">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-            </div>
-
             <div class="hero-text">
                 <img src="/assets/personal1.jpeg" alt="a profile picture" class="personal">
                 <h1>Opoto Etulan Eva</h1>
@@ -37,10 +48,12 @@
             </div>
         </div>
     </header>
-    <div class="section">
+    <div class="section" id="about">
         <h1>About</h1>
+        <hr>
         <p>Hello! I am Opoto Etulan Eva, a Web developer and a Student of Electrical Engineering.</p>
         <h1>Basic Information</h1>
+        <hr>
         <h3>AGE:</h3>
         <p>22</p>
         <h3>EMAIL:</h3>
@@ -50,7 +63,7 @@
         <h3>LANGUAGE:</h3>
         <p>English, French</p>
     </div>
-    <div class="section">
+    <div class="section" id="skills">
         <h1>Professional Skills</h1>
         <p>HTML</p>
         <div class="scontainer">
@@ -83,50 +96,57 @@
         </div>
     </div>
 
-    <div class="section">
+    <div class="section" id="portfolio">
         <h1>Portfolio</h1>
         <div class="row">
             <div class="column">
                 <a href="https://hoarder.netlify.app/pages/faq1/faq1.html" target="_blank">
                     <img src="/assets/hoard.png" alt="hoarding webapp screenshot">
-                    <div class="overlay">Worked on FAQ page</div>
                 </a>
 
                 <a href="https://etulan-calculator.netlify.app/" target="_blank">
                     <img src="/assets/calc.png" alt="calculator webapp screenshot">
-                    <div class="overlay">Calculator</div>
                 </a>
-            </div>
 
-            <div class="column">
                 <a href="https://affectionate-perlman-f38551.netlify.app/" target="_blank">
                     <img src="/assets/todo.png" alt="todolist webapp screenshot">
-                    <div class="overlay">Todolist</div>
-                </a>
-
-                <a href="https://eva-mist.github.io/google_home/" target="_blank">
-                    <img src="/assets/google clone.png" alt="google clone screenshot">
-                    <div class="overlay">Google Homepage Clone</div>
                 </a>
             </div>
 
             <div class="column">
+                <a href="https://eva-mist.github.io/google_home/" target="_blank">
+                    <img src="/assets/google clone.png" alt="google clone screenshot">
+                </a>
+
                 <a href="https://binancetrade-eva.netlify.app/" target="_blank">
                     <img src="/assets/binance.jpg" alt="binance webapp screenshot">
-                    <div class="overlay">CrytoTrade Webapp(Ongoing)</div>
                 </a>
 
                 <a href="https://eva-mist.github.io/tribute/" target="_blank">
                     <img src="/assets/tribute.png" alt="tribute page screenshot">
-                    <div class="overlay">Tribute Page</div>
                 </a>
             </div>
         </div>
     </div>
 
-    <div class="section">
+    <div class="section" id="experience">
         <h1>Experience</h1>
+        <hr>
+        <h3>She Code Africa Mentee (JavaScript)</h3>
+        <p class="red">March, 2021 - May 2021</p>
+        <ul>
+            <li>Built JavaScript WebApps</li>
+            <li>Consume APIs</li>
+        </ul>
 
+        <h3>Zuri Intern</h3>
+        <p class="red">March, 2021 -July 2021</p>
+        <ul>
+            <li>Worked with a full team to build hoardr website</li>
+        </ul>
+
+        <h3>HNG Intern</h3>
+        <p class="red">August, 2021 - Present</p>
     </div>
 </body>
 
